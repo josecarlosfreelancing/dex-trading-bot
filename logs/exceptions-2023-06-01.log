@@ -1,0 +1,212 @@
+Could not transact with/call contract function, is contract deployed correctly and chain synced?
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\web3\contract\utils.py", line 111, in call_contract_function
+    output_data = w3.codec.decode(output_types, return_data)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\eth_abi\codec.py", line 145, in decode
+    return decoder(stream)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\eth_abi\decoding.py", line 129, in __call__
+    return self.decode(stream)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\eth_utils\functional.py", line 45, in inner
+    return callback(fn(*args, **kwargs))
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\eth_abi\decoding.py", line 175, in decode
+    yield decoder(stream)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\eth_abi\decoding.py", line 129, in __call__
+    return self.decode(stream)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\eth_abi\decoding.py", line 199, in decode
+    raw_data = self.read_data_from_stream(stream)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\eth_abi\decoding.py", line 306, in read_data_from_stream
+    raise InsufficientDataBytes(
+eth_abi.exceptions.InsufficientDataBytes: Tried to read 32 bytes.  Only got 0 bytes
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Python\alpha-kcc-dex-bot\AlphaBot.py", line 5347, in runLoop
+    run()
+  File "D:\Python\alpha-kcc-dex-bot\AlphaBot.py", line 4793, in run
+    tokens = load_tokens_file(command_line_args.tokens, True)
+  File "D:\Python\alpha-kcc-dex-bot\AlphaBot.py", line 664, in load_tokens_file
+    '_BASE_PRICE': calculate_base_price(),
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\cachetools\__init__.py", line 737, in wrapper
+    v = func(*args, **kwargs)
+  File "D:\Python\alpha-kcc-dex-bot\AlphaBot.py", line 3067, in calculate_base_price
+    reserves = pair_contract.functions.getReserves().call()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\web3\contract\contract.py", line 461, in call
+    return call_contract_function(
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\web3\contract\utils.py", line 129, in call_contract_function
+    raise BadFunctionCallOutput(msg) from e
+web3.exceptions.BadFunctionCallOutput: Could not transact with/call contract function, is contract deployed correctly and chain synced?
+'ZONE'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\web3\contract\utils.py", line 111, in call_contract_function
+    output_data = w3.codec.decode(output_types, return_data)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\eth_abi\codec.py", line 145, in decode
+    return decoder(stream)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\eth_abi\decoding.py", line 129, in __call__
+    return self.decode(stream)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\eth_utils\functional.py", line 45, in inner
+    return callback(fn(*args, **kwargs))
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\eth_abi\decoding.py", line 175, in decode
+    yield decoder(stream)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\eth_abi\decoding.py", line 129, in __call__
+    return self.decode(stream)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\eth_abi\decoding.py", line 199, in decode
+    raw_data = self.read_data_from_stream(stream)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\eth_abi\decoding.py", line 306, in read_data_from_stream
+    raise InsufficientDataBytes(
+eth_abi.exceptions.InsufficientDataBytes: Tried to read 32 bytes.  Only got 0 bytes
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Python\alpha-kcc-dex-bot\AlphaBot.py", line 5347, in runLoop
+    run()
+  File "D:\Python\alpha-kcc-dex-bot\AlphaBot.py", line 4793, in run
+    tokens = load_tokens_file(command_line_args.tokens, True)
+  File "D:\Python\alpha-kcc-dex-bot\AlphaBot.py", line 664, in load_tokens_file
+    '_BASE_PRICE': calculate_base_price(),
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\cachetools\__init__.py", line 737, in wrapper
+    v = func(*args, **kwargs)
+  File "D:\Python\alpha-kcc-dex-bot\AlphaBot.py", line 3067, in calculate_base_price
+    reserves = pair_contract.functions.getReserves().call()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\web3\contract\contract.py", line 461, in call
+    return call_contract_function(
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\web3\contract\utils.py", line 129, in call_contract_function
+    raise BadFunctionCallOutput(msg) from e
+web3.exceptions.BadFunctionCallOutput: Could not transact with/call contract function, is contract deployed correctly and chain synced?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python\alpha-kcc-dex-bot\AlphaBot.py", line 5347, in runLoop
+    run()
+  File "D:\Python\alpha-kcc-dex-bot\AlphaBot.py", line 4795, in run
+    tokens = reload_tokens_file(command_line_args.tokens, True)
+  File "D:\Python\alpha-kcc-dex-bot\AlphaBot.py", line 931, in reload_tokens_file
+    '_LIQUIDITY_READY': _TOKENS_saved[token['SYMBOL']]['_LIQUIDITY_READY'],
+KeyError: 'ZONE'
+Could not transact with/call contract function, is contract deployed correctly and chain synced?
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\web3\contract\utils.py", line 111, in call_contract_function
+    output_data = w3.codec.decode(output_types, return_data)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\eth_abi\codec.py", line 145, in decode
+    return decoder(stream)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\eth_abi\decoding.py", line 129, in __call__
+    return self.decode(stream)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\eth_utils\functional.py", line 45, in inner
+    return callback(fn(*args, **kwargs))
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\eth_abi\decoding.py", line 175, in decode
+    yield decoder(stream)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\eth_abi\decoding.py", line 129, in __call__
+    return self.decode(stream)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\eth_abi\decoding.py", line 199, in decode
+    raw_data = self.read_data_from_stream(stream)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\eth_abi\decoding.py", line 306, in read_data_from_stream
+    raise InsufficientDataBytes(
+eth_abi.exceptions.InsufficientDataBytes: Tried to read 32 bytes.  Only got 0 bytes
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Python\alpha-kcc-dex-bot\AlphaBot.py", line 5347, in runLoop
+    run()
+  File "D:\Python\alpha-kcc-dex-bot\AlphaBot.py", line 4793, in run
+    tokens = load_tokens_file(command_line_args.tokens, True)
+  File "D:\Python\alpha-kcc-dex-bot\AlphaBot.py", line 664, in load_tokens_file
+    '_BASE_PRICE': calculate_base_price(),
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\cachetools\__init__.py", line 737, in wrapper
+    v = func(*args, **kwargs)
+  File "D:\Python\alpha-kcc-dex-bot\AlphaBot.py", line 3067, in calculate_base_price
+    reserves = pair_contract.functions.getReserves().call()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\web3\contract\contract.py", line 461, in call
+    return call_contract_function(
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\web3\contract\utils.py", line 129, in call_contract_function
+    raise BadFunctionCallOutput(msg) from e
+web3.exceptions.BadFunctionCallOutput: Could not transact with/call contract function, is contract deployed correctly and chain synced?
+'ZONE'
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\web3\contract\utils.py", line 111, in call_contract_function
+    output_data = w3.codec.decode(output_types, return_data)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\eth_abi\codec.py", line 145, in decode
+    return decoder(stream)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\eth_abi\decoding.py", line 129, in __call__
+    return self.decode(stream)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\eth_utils\functional.py", line 45, in inner
+    return callback(fn(*args, **kwargs))
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\eth_abi\decoding.py", line 175, in decode
+    yield decoder(stream)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\eth_abi\decoding.py", line 129, in __call__
+    return self.decode(stream)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\eth_abi\decoding.py", line 199, in decode
+    raw_data = self.read_data_from_stream(stream)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\eth_abi\decoding.py", line 306, in read_data_from_stream
+    raise InsufficientDataBytes(
+eth_abi.exceptions.InsufficientDataBytes: Tried to read 32 bytes.  Only got 0 bytes
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Python\alpha-kcc-dex-bot\AlphaBot.py", line 5347, in runLoop
+    run()
+  File "D:\Python\alpha-kcc-dex-bot\AlphaBot.py", line 4793, in run
+    tokens = load_tokens_file(command_line_args.tokens, True)
+  File "D:\Python\alpha-kcc-dex-bot\AlphaBot.py", line 664, in load_tokens_file
+    '_BASE_PRICE': calculate_base_price(),
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\cachetools\__init__.py", line 737, in wrapper
+    v = func(*args, **kwargs)
+  File "D:\Python\alpha-kcc-dex-bot\AlphaBot.py", line 3067, in calculate_base_price
+    reserves = pair_contract.functions.getReserves().call()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\web3\contract\contract.py", line 461, in call
+    return call_contract_function(
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\web3\contract\utils.py", line 129, in call_contract_function
+    raise BadFunctionCallOutput(msg) from e
+web3.exceptions.BadFunctionCallOutput: Could not transact with/call contract function, is contract deployed correctly and chain synced?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python\alpha-kcc-dex-bot\AlphaBot.py", line 5347, in runLoop
+    run()
+  File "D:\Python\alpha-kcc-dex-bot\AlphaBot.py", line 4795, in run
+    tokens = reload_tokens_file(command_line_args.tokens, True)
+  File "D:\Python\alpha-kcc-dex-bot\AlphaBot.py", line 931, in reload_tokens_file
+    '_LIQUIDITY_READY': _TOKENS_saved[token['SYMBOL']]['_LIQUIDITY_READY'],
+KeyError: 'ZONE'
+Could not transact with/call contract function, is contract deployed correctly and chain synced?
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\web3\contract\utils.py", line 111, in call_contract_function
+    output_data = w3.codec.decode(output_types, return_data)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\eth_abi\codec.py", line 145, in decode
+    return decoder(stream)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\eth_abi\decoding.py", line 129, in __call__
+    return self.decode(stream)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\eth_utils\functional.py", line 45, in inner
+    return callback(fn(*args, **kwargs))
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\eth_abi\decoding.py", line 175, in decode
+    yield decoder(stream)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\eth_abi\decoding.py", line 129, in __call__
+    return self.decode(stream)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\eth_abi\decoding.py", line 199, in decode
+    raw_data = self.read_data_from_stream(stream)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\eth_abi\decoding.py", line 306, in read_data_from_stream
+    raise InsufficientDataBytes(
+eth_abi.exceptions.InsufficientDataBytes: Tried to read 32 bytes.  Only got 0 bytes
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Python\alpha-kcc-dex-bot\AlphaBot.py", line 5347, in runLoop
+    run()
+  File "D:\Python\alpha-kcc-dex-bot\AlphaBot.py", line 4793, in run
+    tokens = load_tokens_file(command_line_args.tokens, True)
+  File "D:\Python\alpha-kcc-dex-bot\AlphaBot.py", line 664, in load_tokens_file
+    '_BASE_PRICE': calculate_base_price(),
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\cachetools\__init__.py", line 737, in wrapper
+    v = func(*args, **kwargs)
+  File "D:\Python\alpha-kcc-dex-bot\AlphaBot.py", line 3067, in calculate_base_price
+    reserves = pair_contract.functions.getReserves().call()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\web3\contract\contract.py", line 461, in call
+    return call_contract_function(
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python310\lib\site-packages\web3\contract\utils.py", line 129, in call_contract_function
+    raise BadFunctionCallOutput(msg) from e
+web3.exceptions.BadFunctionCallOutput: Could not transact with/call contract function, is contract deployed correctly and chain synced?

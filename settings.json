@@ -1,0 +1,41 @@
+[
+{
+    "ALPHAWALLETPRIVATEKEY": "do not enter it manually, open the bot : it will encrypt it",
+    "ALPHAWALLETADDRESS": "wallet address where you hold your ALPHA tokens",
+    "WALLETADDRESS": "wallet address you want to trade on : can be different from ALPHA wallet",
+    "PRIVATEKEY": "do not enter it manually, open the bot : it will encrypt it",
+    "WALLETADDRESS2": "no_utility",
+    "PRIVATEKEY2": "null",
+    "WALLETADDRESS3": "null",
+    "PRIVATEKEY3": "null",
+    "WALLETADDRESS4": "null",
+    "PRIVATEKEY4": "null",
+    "WALLETADDRESS5": "null",
+    "PRIVATEKEY5": "null",
+    "USECUSTOMNODE": "true",
+    "CUSTOMNODE": "https://polished-wandering-smoke.discover.quiknode.pro/16248fe2c6f0ce10107dbd46802dcbb2dbd6faf3",
+    "EXCHANGE": "pancakeswap",
+    "EXCHANGEVERSION": "2",
+    "PREAPPROVE": "true",
+    "UNLIMITEDSLIPPAGE": "false",
+    "PASSWORD_ON_CHANGE": "false",
+    "VERBOSE_PRICING": "true",
+    "SLOW_MODE": "false",
+    "ENABLE_APPRISE_NOTIFICATIONS": "false",
+    "APPRISE_PARAMETER": "null",
+    "START_BUY_AFTER_TIMESTAMP": "false",
+    "START_SELL_AFTER_TIMESTAMP": "false",
+    "_EXCHANGE_BASE_SYMBOL": "BNBt",
+    "_STABLE_BASES": {
+        "BUSD": {
+            "address": "0x8301f2213c0eed49a7e28ae4c3e91722919b8b47",
+            "multiplier": 0
+        },
+        "DAI ": {
+            "address": "0x8a9424745056eb399fd19a0ec26a14316684e274",
+            "multiplier": 0
+        }
+    },
+    "ENCRYPTPRIVATEKEYS": "false"
+}
+]
